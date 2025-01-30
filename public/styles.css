@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Manrope", serif;
+}
+h1 {
+    font-size: 20px;
+    color: hsl(217, 19%, 35%);
+}
+.left-img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.author {
+    margin-top: 20px;
+}
+.container {
+    width: 800px;
+}
+.right-part {
+    padding: 20px;
+}
+.right-part p {
+    margin-top: 10px;
+    color: hsl(212, 23%, 69%);
+}
+.author h2 {
+    color: hsl(217, 19%, 35%);
+}
+span {
+    color: hsl(212, 23%, 69%);
+    font-size: 15px;
+}
+.share {
+    background-color: hsl(217, 19%, 35%);
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.icon-share {
+    background-color: hsl(217, 19%, 35%);
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.share-box {
+    color: hsl(212, 23%, 69%);
+}
+.share::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(0, 0, 0, 0.2)
+    );
+    border-radius: inherit;
+    transform: scale(0.98);
+}
+
+.share::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 8px;
+    background: hsl(217, 19%, 35%);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: flex;
+}
+.mobile {
+    background-color: hsl(217, 19%, 35%);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@media screen and (max-width: 658px) {
+    .container {
+        width: 100%;
+        margin: 50px;
+    }
+}

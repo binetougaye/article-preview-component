@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Article preview component</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div
+            class="container rounded-md bg-white shadow-lg flex md:flex-row flex-col justify-center"
+        >
+            <div>
+                <img
+                    class="w-full h-full object-cover left-img"
+                    src="./images/drawers.jpg"
+                    alt=""
+                />
+            </div>
+            <div>
+                <div class="right-part">
+                    <h1>
+                        Shift the overall look and feel by adding these
+                        wonderful touches to furniture in your home
+                    </h1>
+                    <p>
+                        Ever been in a room and felt like something was missing?
+                        Perhaps it felt slightly bare and uninviting. I’ve got
+                        some simple tips to help you make any room feel
+                        complete.
+                    </p>
+                    <div class="author flex justify-between items-center">
+                        <div class="flex author-container items-center gap-3">
+                            <div>
+                                <img
+                                    class="rounded-full w-[50px]"
+                                    src="./images/avatar-michelle.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <h2>Michelle Appleton</h2>
+                                <span> 28 Jun 2020</span>
+                            </div>
+                        </div>
+
+                        <div class="relative inline-block group">
+                            <div
+                                class="icon-share relative rounded-full text-white cursor-pointer"
+                            >
+                                <img
+                                    id="share"
+                                    src="./images/icon-share.svg"
+                                    alt="Share"
+                                />
+                            </div>
+
+                            <div
+                                class="share absolute bottom-full hidden left-1/2 transform -translate-x-1/2 mb-3 items-center gap-5 text-white rounded-lg shadow-lg"
+                            >
+                                <div class="flex gap-5">
+                                    <div class="uppercase">share</div>
+                                    <img
+                                        src="./images/icon-facebook.svg"
+                                        alt="Facebook"
+                                    />
+                                    <img
+                                        src="./images/icon-twitter.svg"
+                                        alt="Twitter"
+                                    />
+                                    <img
+                                        src="./images/icon-pinterest.svg"
+                                        alt="Pinterest"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOBILE -->
+                <div
+                    class="mobile hidden flex justify-between items-center gap-5 text-white"
+                >
+                    <div class="flex gap-5">
+                        <div class="uppercase">share</div>
+                        <img src="./images/icon-facebook.svg" alt="Facebook" />
+                        <img src="./images/icon-twitter.svg" alt="Twitter" />
+                        <img
+                            src="./images/icon-pinterest.svg"
+                            alt="Pinterest"
+                        />
+                    </div>
+                    <div
+                        class="icon-share relative rounded-full text-white cursor-pointer"
+                    >
+                        <img
+                            id="share"
+                            src="./images/icon-share.svg"
+                            alt="Share"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
